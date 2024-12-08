@@ -4,7 +4,7 @@ EXEC sp_columns 'Purchasing.PurchaseOrderDetail';
 EXEC sp_columns 'Purchasing.PurchaseOrderHeader';
 EXEC sp_columns 'Purchasing.ShipMethod';
 EXEC sp_columns 'Purchasing.Vendor';
----------------------------------------------------Nettoyage des données-------------------------------------------------------------
+---------------------------------------------------Nettoyage des donnï¿½es--------------------------------------------------------------------
 --Purchasing.ProductVendor
 SELECT * FROM Purchasing.ProductVendor;
 SELECT * FROM Purchasing.ProductVendor WHERE ProductID IS NULL OR BusinessEntityID IS NULL OR AverageLeadTime IS NULL OR StandardPrice IS NULL OR LastReceiptCost IS NULL OR LastReceiptDate IS NULL OR MinOrderQty IS NULL OR MaxOrderQty IS NULL OR OnOrderQty IS NULL OR UnitMeasureCode IS NULL OR ModifiedDate IS NULL  ; 
