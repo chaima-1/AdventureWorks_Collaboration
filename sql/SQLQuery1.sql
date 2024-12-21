@@ -114,3 +114,4 @@ WHERE BusinessEntityID < 0
    OR ActiveFlag NOT IN (0, 1);
 SELECT * FROM Purchasing.Vendor
 WHERE ModifiedDate > GETDATE();
+
